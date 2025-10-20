@@ -1,0 +1,27 @@
+{
+  "name": "data-import-export",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sistema de importação e exportação de dados com Node.js, TypeScript e Redis",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev:api": "pnpm --filter upload-api dev",
+    "dev:processor": "pnpm --filter processor-service dev",
+    "start:api": "pnpm --filter upload-api start",
+    "start:processor": "pnpm --filter processor-service start",
+    "clean": "pnpm -r clean",
+    "lint": "biome check",
+    "format": "biome check --write",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.2.6",
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.3",
+    "tsx": "^4.7.0"
+  }
+}

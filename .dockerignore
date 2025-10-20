@@ -1,0 +1,55 @@
+# Dependências
+node_modules/
+**/node_modules/
+
+# Build output
+dist/
+**/dist/
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Git
+.git/
+.gitignore
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.*.local
+
+# Documentação
+*.md
+!README.md
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dados locais (serão montados como volumes)
+uploads/
+processed/
+
+# Tests
+**/__tests__/
+**/*.test.ts
+**/*.spec.ts
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+
+# Outros
+coverage/
+.nyc_output/
+temp/
+tmp/

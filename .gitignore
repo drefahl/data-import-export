@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.local
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# GCP credentials
+*.json
+!tsconfig.json
+!package.json
+!biome.json
+!.vscode/settings.json
+
+# Temp files
+tmp/
+temp/
+
+# Upload directories
+uploads/
+processed/
